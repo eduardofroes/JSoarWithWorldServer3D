@@ -102,7 +102,8 @@ public class SimulationController {
             finalizeReport("Creature's Score", "Time", "Score", getResultCreatureScore(), getFileCreatureScore());
             getT().cancel();
             getT().purge();
-            agent.stop();
+            //agent.stop();
+            System.exit(1);
         }
 
         setCounterToGenerateThings(getCounterToGenerateThings() + 1);
